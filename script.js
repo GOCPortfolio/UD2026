@@ -123,7 +123,7 @@ const CONFIG = {
   footer: { thanks: "Thank you for celebrating with us. Your love and support mean the world to us." },
   share: { text: "You are invited to celebrate the wedding of Merit & EL DozZy on Saturday, 26th December 2026." },
   music: { src: "assets/music.mp3", volume: 0.5 },
-  rsvp: { endpoint: "", maxGuests: 10 }   // paste your Google Apps Script Web App URL into endpoint (see README)
+  rsvp: { endpoint: "https://script.google.com/macros/s/AKfycbxZmCTH9yJn0aJY51OvW1ZbeOjg0qIupQMz1zULWrfSRPaQUXAqo3DHfD6mf1de3wKQsg/exec", maxGuests: 10 }   // paste your Google Apps Script Web App URL into endpoint (see README)
 };
 
 /* ============================ APP CODE ============================ */
