@@ -7,7 +7,7 @@ const CONFIG = {
   siteUrl: "https://gocportfolio.github.io/UD2026/",
 
   couple: {
-    short: "Merit & EL DozZy",
+    short: "Merit & DozZy",
     heroNames: "Merit & DozZy",
     bride: { short: "Merit", title: "Miss", given: "Merit Ugonnaya", surname: "Chijioke",
       parents: "Daughter of Mr Ejike Chijioke-Ohaeri & Mrs Evelyn Ulunma Ohaeri" },
