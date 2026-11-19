@@ -11,7 +11,7 @@ const CONFIG = {
     heroNames: "Merit & DozZy",
     bride: { short: "Merit", title: "Miss", given: "Merit Ugonnaya", surname: "Chijioke",
       parents: "Daughter of Mr Ejike Chijioke-Ohaeri & Mrs Evelyn Ulunma Ohaeri" },
-    groom: { short: "EL DozZy", title: "Mr", given: "Prince Chidozie", surname: "Nnanta",
+    groom: { short: "DozZy", title: "Mr", given: "Prince Chidozie", surname: "Nnanta",
       parents: "Son of Late Deacon Ikechi Samuel Nnanta & Deaconess Justina Onyinyechi Nnanta" },
     seal: { line1: "Ugo", line2: "DozZy", line3: "'26" },
     hashtag: "#UgoDozZy'26",
