@@ -70,7 +70,7 @@ const CONFIG = {
     ["Reception Outfit (Bride)", "Tresic Styling"],
     ["Reception Outfit (Groom)", "Lucky Fashion Homes"]
   ],
-  developer: "",   // TODO e.g. "Website: Your Name". Leave empty to hide.
+  developer: "G.O.C | Brand Strategist",   // TODO e.g. "Website: Your Name". Leave empty to hide.
 
   gifts: {
     bank: "First Bank", accountName: "Chidozie Prince Nnanta", accountNumber: "3060039856",
@@ -117,7 +117,11 @@ const CONFIG = {
     { q: "What is the dress code?", a: "Please dress in our colours of the day.", swatches: true },
     { q: "Where can I park?", a: "Parking details will be shared closer to the day. Please call the contact person for guidance." },   // TODO
     { q: "Where can I stay?", a: "Accommodation suggestions will be shared closer to the day. Please call the contact person for help." },   // TODO
-    { q: "Who do I contact?", contact: true }
+    { q: "Who do I contact?", contact: true },
+    { q: "Who created this beautiful wedding website?",
+  a: "This website was proudly designed by G.O.C | Brand Strategist \u00d7 AI, where we create beautiful, personalized digital wedding experiences.",
+  extra: "Planning your wedding? Let's create yours too!",
+  link: { text: "Chat with us on WhatsApp", href: "https://wa.me/2348027134537" } }
   ],
 
   footer: { thanks: "Thank you for celebrating with us. Your love and support mean the world to us." },
