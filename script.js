@@ -9,12 +9,12 @@ const CONFIG = {
   couple: {
     short: "Merit & EL DozZy",
     heroNames: "Merit & EL DozZy",
-    bride: { short: "Merit", title: "Miss", given: "Merit Ugonnanya", surname: "Chijioke",
+    bride: { short: "Merit", title: "Miss", given: "Merit Ugonnaya", surname: "Chijioke",
       parents: "Daughter of Mr Ejike Chijioke-Ohaeri & Mrs Evelyn Ulunma Ohaeri" },
     groom: { short: "EL DozZy", title: "Mr", given: "Prince Chidozie", surname: "Nnanta",
       parents: "Son of Late Deacon Ikechi Samuel Nnanta & Deaconess Justina Onyinyechi Nnanta" },
     seal: { line1: "Ugo", line2: "DozZy", line3: "'26" },
-    hashtag: "#UgoDozZy2026",
+    hashtag: "#UgoDozZy'26",
     tagline: "To love and be loved"
   },
 
@@ -70,7 +70,8 @@ const CONFIG = {
     ["Reception Outfit (Bride)", "Tresic Styling"],
     ["Reception Outfit (Groom)", "Lucky Fashion Homes"]
   ],
-  developer: "G.O.C | Brand Strategist",   // TODO e.g. "Website: Your Name". Leave empty to hide.
+  developer: "G.O.C | Brand Strategist",
+  developerWhatsapp: "https://wa.me/2348027134537",   // TODO e.g. "Website: Your Name". Leave empty to hide.
 
   gifts: {
     bank: "First Bank", accountName: "Chidozie Prince Nnanta", accountNumber: "3060039856",
@@ -119,7 +120,7 @@ const CONFIG = {
     { q: "Where can I stay?", a: "Accommodation suggestions will be shared closer to the day. Please call the contact person for help." },   // TODO
     { q: "Who do I contact?", contact: true },
     { q: "Who created this beautiful wedding website?",
-  a: "This website was proudly designed by G.O.C | Brand Strategist \u00d7 AI, where we create beautiful, personalized digital wedding experiences.",
+  a: "This website was proudly designed by G.O.C | Brand Strategist, where we create beautiful, personalized digital wedding experiences.",
   extra: "Planning your wedding? Let's create yours too!",
   link: { text: "Chat with us on WhatsApp", href: "https://wa.me/2348027134537" } }
   ],
@@ -200,8 +201,20 @@ const CONFIG = {
     C.vendors.forEach(([role, name, phone]) => list.append(el("li", {},
       el("span", { class: "vd-role", text: role }),
       el("span", { class: "vd-name" }, name, phone ? el("a", { class: "vd-tel", href: "tel:" + ctaDigits(phone).replace(/^(?!0)/, "+234"), text: " · " + phone }) : null))));
-    if (C.developer) list.append(el("li", {}, el("span", { class: "vd-role", text: "Website" }), el("span", { class: "vd-name", text: C.developer.replace(/^Website:\s*/i, "") })));
+    if (C.developer) list.append(el("li", {}, el("span", { class: "vd-role", text: "Website" }), el("span", { class: "vd-name" }, C.developerWhatsapp ? el("a", { class: "vd-link", href: C.developerWhatsapp, target: "_blank", rel: "noopener", text: C.developer.replace(/^Website:\s*/i, "") }) : C.developer.replace(/^Website:\s*/i, ""))));
   }
+
+  /* ---------- hero slideshow (soft cross-fade) ---------- */
+  (function () {
+    const slides = $$(".hero-slide"); if (slides.length < 2 || reduce) return;
+    let i = 0;
+    const load = (s) => { if (s.dataset.src) { s.src = s.dataset.src; delete s.dataset.src; } return s.decode ? s.decode().catch(() => {}) : Promise.resolve(); };
+    const next = async () => {
+      const n = (i + 1) % slides.length; await load(slides[n]);
+      slides[n].classList.add("is-on"); slides[i].classList.remove("is-on"); i = n;
+    };
+    window.addEventListener("load", () => { slides.slice(1).forEach(load); setInterval(next, 6500); });
+  })();
 
   /* ---------- story ---------- */
   C.story.moments.forEach((m, i) => $("#timeline").append(el("li", { class: "moment reveal" },
@@ -220,6 +233,8 @@ const CONFIG = {
     const body = el("div", { class: "acc-body", id: "acc-b" + i, role: "region", "aria-labelledby": "acc-h" + i });
     const inner = el("div", { class: "acc-in" });
     if (f.a) inner.append(el("p", { text: f.a }));
+    if (f.extra) inner.append(el("p", { text: f.extra }));
+    if (f.link) inner.append(el("p", {}, el("a", { href: f.link.href, target: "_blank", rel: "noopener", text: f.link.text })));
     if (f.swatches) { const ul = el("ul", { class: "swatches swatches-sm" }); swatches(ul); inner.append(ul); }
     if (f.contact) {
       inner.append(el("p", {}, el("strong", { text: C.contact.coordinatorName + ": " }), el("a", { href: telHref(C.contact.coordinatorPhone), text: C.contact.coordinatorPhone })));

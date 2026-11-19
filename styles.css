@@ -377,3 +377,13 @@ input[aria-invalid=true] { border-color: #b3261e; }
 .hero-names { line-height: 1.4; }
 .hn { margin-top: -.2em; margin-bottom: -.1em; }
 .it-names { margin-top: -.15em; }
+
+/* Hero slideshow: stacked photos that cross-fade slowly */
+.hero-photo { overflow: hidden; }
+.hero-photo .hero-slide { position: absolute; inset: 0; opacity: 0; transition: opacity 2.2s ease-in-out; will-change: opacity; }
+.hero-photo .hero-slide.is-on { opacity: 1; }
+.hero-photo .hero-slide:nth-child(2) { object-position: 50% 30%; }
+.hero-photo .hero-slide:nth-child(3) { object-position: 50% 25%; }
+.hero-photo .hero-slide:nth-child(4) { object-position: 50% 30%; }
+.hero-photo::after { z-index: 1; }
+.vd-link { color: inherit; text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: 4px; }

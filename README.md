@@ -1,4 +1,4 @@
-# Merit & EL DozZy: Wedding Invitation Website (#UgoDozZy2026)
+# Merit & EL DozZy: Wedding Invitation Website (#UgoDozZy'26)
 
 Saturday, 26th December 2026 · 9:00 AM · Aba, Abia State
 Live address (once published): https://gocportfolio.github.io/UD2026/
