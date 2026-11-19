@@ -431,7 +431,8 @@ const CONFIG = {
     A($(".sprig"), [{ opacity: 1 }, { opacity: 0 }], { duration: 500 }); A($(".ribbon"), [{ opacity: 1 }, { opacity: 0 }], { duration: 500 });
     A($("#envText"), [{ opacity: 1 }, { opacity: 0 }], { duration: 450 }); A($("#introTitle"), [{ opacity: 1 }, { opacity: 0 }], { duration: 500 });
     sparkle(); await wait(380);
-    A(flap, [{ transform: "rotateX(0deg)" }, { transform: "rotateX(180deg)" }], { duration: 760, easing: "ease-in-out" }); await wait(620);
+    A(flap, [{ transform: "rotateX(0deg)" }, { transform: "rotateX(180deg)" }], { duration: 760, easing: "ease-in-out" });
+    await wait(380); flap.style.zIndex = 0; await wait(240);   // once the lid passes upright, drop it behind the card
     // card slides up out of the envelope
     const er = env.getBoundingClientRect(), cr = card.getBoundingClientRect();
     const rise = (cr.bottom - er.top) - 0.15 * cr.height + 6;      // leave only the bottom 15% inside

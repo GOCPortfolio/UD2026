@@ -361,3 +361,19 @@ input[aria-invalid=true] { border-color: #b3261e; }
 @media (min-width: 1500px) {
   .g-masonry { column-count: 5; }
 }
+
+/* ===== Fixes ===== */
+/* Envelope layering: card sits between the back and the front pocket; the lid is dropped behind the card by script once it is open */
+.env-card { z-index: 1; }
+.env-front { z-index: 2; }
+.env-grain, .env-text { z-index: 3; }
+
+/* Script-font names: Great Vibes ascenders overshoot the line box, and gradient text (background-clip:text) is cut at the box edge. Give them headroom. */
+.it-names, .hn, .married, .fod-label, .toast-head, .tl-last, .c-surname, .foot-names, .c-guest, .ok-title, .noscript .ns-names, .env-dear {
+  line-height: 1.4;
+  padding-top: .28em;
+  padding-bottom: .18em;
+}
+.hero-names { line-height: 1.4; }
+.hn { margin-top: -.2em; margin-bottom: -.1em; }
+.it-names { margin-top: -.15em; }
