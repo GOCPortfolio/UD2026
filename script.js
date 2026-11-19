@@ -8,7 +8,7 @@ const CONFIG = {
 
   couple: {
     short: "Merit & EL DozZy",
-    heroNames: "Merit & EL DozZy",
+    heroNames: "Merit & DozZy",
     bride: { short: "Merit", title: "Miss", given: "Merit Ugonnaya", surname: "Chijioke",
       parents: "Daughter of Mr Ejike Chijioke-Ohaeri & Mrs Evelyn Ulunma Ohaeri" },
     groom: { short: "EL DozZy", title: "Mr", given: "Prince Chidozie", surname: "Nnanta",
