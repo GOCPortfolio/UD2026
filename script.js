@@ -32,7 +32,7 @@ const CONFIG = {
       mapQuery: "The Apostolic Church Umuocham Assembly, Living Word Junction, Aba, Abia State",
       mapsUrl: "https://maps.app.goo.gl/MRSW2y5ukKPt3A5v7" },
     { label: "Reception", name: "Ngwa High School Field", sub: "Aba",
-      address: "Ngwa High School Field, Aba, Abia State", time: "Immediately after the ceremony",   // TODO confirm
+      address: "Ngwa High School Field, Aba, Abia State", time: "1:00 PM",
       mapQuery: "Ngwa High School Field, Aba, Abia State",
       mapsUrl: "https://maps.app.goo.gl/kR2DpcvVq5ZpVY5D9" }
   ],
@@ -88,10 +88,10 @@ const CONFIG = {
         text: "We built something through calls, chats and little moments shared from far and near. It wasn't perfect, but somehow it felt right.",
         img: "assets/story-2.webp", alt: "Merit and EL DozZy standing together by a lift in black and white" },
       { label: "Where love won", title: "Peace, fights and love",
-        text: "There was peace in it, there were also fights in it. But at the end, love won it all.",
+        text: "There was peace in it, there were also fights in it. But at the end, love won it all. The hello became conversations. The conversations became friendship. The friendship became love. And the love brought us here, ready to become husband and wife",
         img: "assets/story-3.webp", alt: "Merit and EL DozZy in a tender pre-wedding pose on a staircase" }
     ],
-    closing: "The hello became conversations. The conversations became friendship. The friendship became love. And the love brought us here, ready to become husband and wife"
+    closing: ""
   },
 
   gallery: [
@@ -217,12 +217,13 @@ const CONFIG = {
   })();
 
   /* ---------- story ---------- */
-  C.story.moments.forEach((m, i) => $("#timeline").append(el("li", { class: "moment reveal" },
-    el("figure", { class: "m-photo" }, el("img", { src: m.img, alt: m.alt, width: 640, height: 800, loading: "lazy", decoding: "async" })),
-    el("div", { class: "m-body" },
+  C.story.moments.forEach((m) => {
+    $("#storyText").append(el("p", { class: "st-p reveal", text: m.text }));
+    $("#timeline").append(el("li", { class: "moment reveal" },
+      el("figure", { class: "m-photo" }, el("img", { src: m.img, alt: m.alt, width: 640, height: 800, loading: "lazy", decoding: "async" })),
       el("p", { class: "m-label", text: m.label }),
-      el("h3", { class: "m-title", text: m.title }),
-      el("p", { class: "m-text", text: m.text })))));
+      el("h3", { class: "m-title", text: m.title })));
+  });
 
   /* ---------- toast text ---------- */
   C.toast.lines.forEach((l, i, a) => $("#toastLines").append(el("span", { class: "tl reveal" + (i === a.length - 1 ? " tl-last gold-text" : ""), text: l })));

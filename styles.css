@@ -388,3 +388,41 @@ input[aria-invalid=true] { border-color: #b3261e; }
 .hero-photo::after { z-index: 1; }
 .hero-content { z-index: 2; }
 .vd-link { color: inherit; text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: 4px; }
+
+/* ===== Hashtag: elegant script, larger, keeps its mixed case (#UgoDozZy'26) ===== */
+.hero-tag, .c-hash, .foot-hash, .card-pill {
+  font-family: var(--font-script); font-weight: 400; text-transform: none; letter-spacing: .02em; line-height: 1.4;
+}
+.hero-tag { font-size: clamp(2rem, 9vw, 2.8rem); padding: .12em .1em .08em; }
+.c-hash { font-size: clamp(1.9rem, 8vw, 2.5rem); white-space: nowrap; color: var(--burg); padding: .1em .1em .05em; margin-bottom: 2px; }
+.foot-hash { font-size: clamp(2.2rem, 10vw, 3rem); padding: .12em .1em .1em; }
+.card-pill { font-size: 1.3rem; padding: 14px 6px 14px; letter-spacing: .04em; }
+
+/* ===== Our Story: heading + intro on top, each photo kept together with its text beneath ===== */
+.sec-story .moment { break-inside: avoid; page-break-inside: avoid; display: flex; flex-direction: column; align-items: center; }
+.sec-story .m-photo { width: min(70%, 270px); margin-bottom: 18px; }
+.sec-story .m-body { max-width: 34em; }
+.sec-story .m-label { margin-top: 2px; }
+.sec-story .m-title { margin: 6px 0 8px; line-height: 1.3; }
+.sec-story .m-text { margin: 0; }
+.sec-story .timeline { gap: 52px; }
+@media (min-width: 760px) { .sec-story .m-photo { width: 100%; } }
+
+/* ===== Hashtag: upright, elegant serif (no slant), larger ===== */
+.hero-tag, .c-hash, .foot-hash, .card-pill {
+  font-family: 'Cormorant Garamond', 'Cardo', Georgia, serif; font-style: normal; font-weight: 600; letter-spacing: .04em; line-height: 1.3; text-transform: none;
+}
+.hero-tag { font-size: clamp(1.7rem, 7.5vw, 2.3rem); padding: 0; }
+.c-hash { font-size: clamp(1.7rem, 7.5vw, 2.2rem); color: var(--burg); padding: 0; margin-bottom: 4px; }
+.foot-hash { font-size: clamp(1.8rem, 8vw, 2.4rem); padding: 0; }
+.card-pill { font-size: 1.15rem; padding: 14px 8px; }
+
+/* ===== Our Story: all the writing together, then the photos with sub-headings ===== */
+.story-text { max-width: 38em; margin: 0 auto 44px; text-align: center; }
+.st-p { margin: 0 0 18px; font-size: 1.2rem; line-height: 1.7; color: var(--ink); }
+.sec-story .timeline { gap: 44px; }
+.sec-story .moment { display: block; text-align: center; }
+.sec-story .m-photo { width: min(76%, 300px); margin: 0 auto 14px; }
+.sec-story .m-label { margin: 0; }
+.sec-story .m-title { margin: 4px 0 0; }
+@media (min-width: 760px) { .sec-story .m-photo { width: 100%; } }
