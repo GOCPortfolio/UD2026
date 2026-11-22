@@ -56,6 +56,7 @@ const CONFIG = {
 
   vendors: [
     ["Event Planner", "Afri Comfort Resort"],
+    ["MC", "Dr. Wisdom Añucha (DMC)"],
     ["Cake", "@Prichimescake"],
     ["Decoration", "Crest Concept Ventures", "080-379-03428"],
     ["DJ", "DJ Shocky"],
@@ -83,29 +84,29 @@ const CONFIG = {
     moments: [
       { label: "Where it began", title: "A simple hello",
         text: "Just a conversation between two students in MOUAU who had no idea where it would lead.",
-        img: "assets/story-1.webp", alt: "Merit and EL DozZy in an early photo together" },
+        img: "assets/story-1.webp", alt: "Merit and DozZy in an early photo together" },
       { label: "Near and far", title: "Calls, chats and little moments",
         text: "We built something through calls, chats and little moments shared from far and near. It wasn't perfect, but somehow it felt right.",
-        img: "assets/story-2.webp", alt: "Merit and EL DozZy standing together by a lift in black and white" },
+        img: "assets/story-2.webp", alt: "Merit and DozZy standing together by a lift in black and white" },
       { label: "Where love won", title: "Peace, fights and love",
-        text: "There was peace in it, there were also fights in it. But at the end, love won it all. The hello became conversations. The conversations became friendship. The friendship became love. And the love brought us here, ready to become husband and wife",
-        img: "assets/story-3.webp", alt: "Merit and EL DozZy in a tender pre-wedding pose on a staircase" }
+        text: "There was peace in it, there were also fights in it. But at the end, love won it all.",
+        img: "assets/story-3.webp", alt: "Merit and DozZy in a tender pre-wedding pose on a staircase" }
     ],
-    closing: ""
+    closing: "The hello became conversations. The conversations became friendship. The friendship became love. And the love brought us here, ready to become husband and wife"
   },
 
   gallery: [
-    { src: "assets/gallery-01.webp", sm: "assets/gallery-01-sm.webp", w: 959, h: 1198, sw: 560, sh: 700, alt: "Merit and EL DozZy in traditional attire at night" },
+    { src: "assets/gallery-01.webp", sm: "assets/gallery-01-sm.webp", w: 959, h: 1198, sw: 560, sh: 700, alt: "Merit and DozZy in traditional attire at night" },
     { src: "assets/gallery-02.webp", sm: "assets/gallery-02-sm.webp", w: 992, h: 1239, sw: 560, sh: 699, alt: "The couple in matching red and gold traditional wear" },
     { src: "assets/gallery-03.webp", sm: "assets/gallery-03-sm.webp", w: 900, h: 1080, sw: 560, sh: 672, alt: "Merit waving with a bright smile in the garden" },
     { src: "assets/gallery-04.webp", sm: "assets/gallery-04-sm.webp", w: 853, h: 1280, sw: 560, sh: 840, alt: "Merit joyfully tossing the horsetail fan" },
-    { src: "assets/gallery-05.webp", sm: "assets/gallery-05-sm.webp", w: 1200, h: 800, sw: 640, sh: 426, alt: "Merit and EL DozZy sharing a moment during the traditional wedding" },
+    { src: "assets/gallery-05.webp", sm: "assets/gallery-05-sm.webp", w: 1200, h: 800, sw: 640, sh: 426, alt: "Merit and DozZy sharing a moment during the traditional wedding" },
     { src: "assets/gallery-06.webp", sm: "assets/gallery-06-sm.webp", w: 936, h: 1170, sw: 560, sh: 700, alt: "A tender pre-wedding moment on the staircase" },
     { src: "assets/gallery-07.webp", sm: "assets/gallery-07-sm.webp", w: 914, h: 1280, sw: 560, sh: 784, alt: "Merit carrying the wine, smiling" },
-    { src: "assets/gallery-08.webp", sm: "assets/gallery-08-sm.webp", w: 1200, h: 855, sw: 640, sh: 456, alt: "EL DozZy celebrated with money spraying at the traditional wedding" },
-    { src: "assets/gallery-09.webp", sm: "assets/gallery-09-sm.webp", w: 970, h: 1213, sw: 560, sh: 700, alt: "Merit and EL DozZy by the lift in black and white" },
-    { src: "assets/gallery-10.webp", sm: "assets/gallery-10-sm.webp", w: 800, h: 1123, sw: 560, sh: 786, alt: "Merit and EL DozZy in the greenery" },
-    { src: "assets/gallery-11.webp", sm: "assets/gallery-11-sm.webp", w: 594, h: 1080, sw: 560, sh: 1018, alt: "An early photo of Merit and EL DozZy" }
+    { src: "assets/gallery-08.webp", sm: "assets/gallery-08-sm.webp", w: 1200, h: 855, sw: 640, sh: 456, alt: "DozZy celebrated with money spraying at the traditional wedding" },
+    { src: "assets/gallery-09.webp", sm: "assets/gallery-09-sm.webp", w: 970, h: 1213, sw: 560, sh: 700, alt: "Merit and DozZy by the lift in black and white" },
+    { src: "assets/gallery-10.webp", sm: "assets/gallery-10-sm.webp", w: 800, h: 1123, sw: 560, sh: 786, alt: "Merit and DozZy in the greenery" },
+    { src: "assets/gallery-11.webp", sm: "assets/gallery-11-sm.webp", w: 594, h: 1080, sw: 560, sh: 1018, alt: "An early photo of Merit and DozZy" }
   ],
 
   toast: {
@@ -126,7 +127,7 @@ const CONFIG = {
   ],
 
   footer: { thanks: "Thank you for celebrating with us. Your love and support mean the world to us." },
-  share: { text: "You are invited to celebrate the wedding of Merit & EL DozZy on Saturday, 26th December 2026." },
+  share: { text: "You are invited to celebrate the wedding of Merit & DozZy on Saturday, 26th December 2026." },
   music: { src: "assets/music.mp3", volume: 0.5 },
   rsvp: { endpoint: "https://script.google.com/macros/s/AKfycbxZmCTH9yJn0aJY51OvW1ZbeOjg0qIupQMz1zULWrfSRPaQUXAqo3DHfD6mf1de3wKQsg/exec", maxGuests: 10 }   // paste your Google Apps Script Web App URL into endpoint (see README)
 };
