@@ -89,10 +89,10 @@ const CONFIG = {
         text: "We built something through calls, chats and little moments shared from far and near. It wasn't perfect, but somehow it felt right.",
         img: "assets/story-2.webp", alt: "Merit and DozZy standing together by a lift in black and white" },
       { label: "Where love won", title: "Peace, fights and love",
-        text: "There was peace in it, there were also fights in it. But at the end, love won it all.",
+        text: "There was peace in it, there were also fights in it. But at the end, love won it all.  The hello became conversations. The conversations became friendship. The friendship became love. And the love brought us here, ready to become husband and wife",
         img: "assets/story-3.webp", alt: "Merit and DozZy in a tender pre-wedding pose on a staircase" }
     ],
-    closing: "The hello became conversations. The conversations became friendship. The friendship became love. And the love brought us here, ready to become husband and wife"
+    closing: ""
   },
 
   gallery: [
