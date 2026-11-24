@@ -84,19 +84,20 @@ const CONFIG = {
     moments: [
       { label: "Where it began", title: "A simple hello",
         text: "Just a conversation between two students in MOUAU who had no idea where it would lead.",
-        img: "assets/story-1.webp", alt: "Merit and DozZy in an early photo together" },
+        img: "assets/story-1.webp", alt: "" },
+        { solo: "Our Throwback", img: "assets/story-4.webp", w: 472, h: 1080, alt: "" },
       { label: "Near and far", title: "Calls, chats and little moments",
         text: "We built something through calls, chats and little moments shared from far and near. It wasn't perfect, but somehow it felt right.",
-        img: "assets/story-2.webp", alt: "Merit and DozZy standing together by a lift in black and white" },
+        img: "assets/story-2.webp", alt: "" },
       { label: "Where love won", title: "Peace, fights and love",
         text: "There was peace in it, there were also fights in it. But at the end, love won it all.  The hello became conversations. The conversations became friendship. The friendship became love. And the love brought us here, ready to become husband and wife",
-        img: "assets/story-3.webp", alt: "Merit and DozZy in a tender pre-wedding pose on a staircase"},
-      { solo: "Our Throwback", img: "assets/story-4.webp", w: 472, h: 1080, alt: "Our throwback: Merit and DozZy smiling at each other on a night out" }
+        img: "assets/story-3.webp", alt: ""},
     ],
     closing: ""
   },
 
   gallery: [
+    { src: "assets/gallery-11.webp", sm: "assets/gallery-11-sm.webp", w: 594, h: 1080, sw: 560, sh: 1018, alt: "" },
     { src: "assets/gallery-01.webp", sm: "assets/gallery-01-sm.webp", w: 959, h: 1198, sw: 560, sh: 700, alt: "" },
     { src: "assets/gallery-02.webp", sm: "assets/gallery-02-sm.webp", w: 992, h: 1239, sw: 560, sh: 699, alt: "" },
     { src: "assets/gallery-03.webp", sm: "assets/gallery-03-sm.webp", w: 900, h: 1080, sw: 560, sh: 672, alt: "" },
@@ -106,8 +107,7 @@ const CONFIG = {
     { src: "assets/gallery-07.webp", sm: "assets/gallery-07-sm.webp", w: 914, h: 1280, sw: 560, sh: 784, alt: "" },
     { src: "assets/gallery-08.webp", sm: "assets/gallery-08-sm.webp", w: 1200, h: 855, sw: 640, sh: 456, alt: "" },
     { src: "assets/gallery-09.webp", sm: "assets/gallery-09-sm.webp", w: 970, h: 1213, sw: 560, sh: 700, alt: "" },
-    { src: "assets/gallery-10.webp", sm: "assets/gallery-10-sm.webp", w: 800, h: 1123, sw: 560, sh: 786, alt: "" },
-    { src: "assets/gallery-11.webp", sm: "assets/gallery-11-sm.webp", w: 594, h: 1080, sw: 560, sh: 1018, alt: "" }
+    { src: "assets/gallery-10.webp", sm: "assets/gallery-10-sm.webp", w: 800, h: 1123, sw: 560, sh: 786, alt: "" }
   ],
 
   toast: {
