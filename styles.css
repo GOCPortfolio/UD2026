@@ -426,3 +426,8 @@ input[aria-invalid=true] { border-color: #b3261e; }
 .sec-story .m-label { margin: 0; }
 .sec-story .m-title { margin: 4px 0 0; }
 @media (min-width: 760px) { .sec-story .m-photo { width: 100%; } }
+
+/* Throwback photo: sits on its own, centred under the three story photos */
+.sec-story .moment.solo { grid-column: 1 / -1; }
+.sec-story .moment.solo .m-photo { width: min(76%, 300px); margin-inline: auto; }
+.m-throwback { font-family: var(--font-ui); font-size: .8rem; letter-spacing: .28em; text-transform: uppercase; color: var(--gold-dark); font-weight: 600; margin: 0 0 16px; }

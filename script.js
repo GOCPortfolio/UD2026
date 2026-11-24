@@ -90,7 +90,8 @@ const CONFIG = {
         img: "assets/story-2.webp", alt: "Merit and DozZy standing together by a lift in black and white" },
       { label: "Where love won", title: "Peace, fights and love",
         text: "There was peace in it, there were also fights in it. But at the end, love won it all.  The hello became conversations. The conversations became friendship. The friendship became love. And the love brought us here, ready to become husband and wife",
-        img: "assets/story-3.webp", alt: "Merit and DozZy in a tender pre-wedding pose on a staircase" }
+        img: "assets/story-3.webp", alt: "Merit and DozZy in a tender pre-wedding pose on a staircase"},
+      { solo: "Our Throwback", img: "assets/story-4.webp", w: 472, h: 1080, alt: "Our throwback: Merit and DozZy smiling at each other on a night out" }
     ],
     closing: ""
   },
@@ -219,11 +220,10 @@ const CONFIG = {
 
   /* ---------- story ---------- */
   C.story.moments.forEach((m) => {
-    $("#storyText").append(el("p", { class: "st-p reveal", text: m.text }));
-    $("#timeline").append(el("li", { class: "moment reveal" },
-      el("figure", { class: "m-photo" }, el("img", { src: m.img, alt: m.alt, width: 640, height: 800, loading: "lazy", decoding: "async" })),
-      el("p", { class: "m-label", text: m.label }),
-      el("h3", { class: "m-title", text: m.title })));
+    if (m.text) $("#storyText").append(el("p", { class: "st-p reveal", text: m.text }));
+    $("#timeline").append(el("li", { class: "moment reveal" + (m.solo ? " solo" : "") },
+      m.solo ? el("p", { class: "m-throwback", text: m.solo }) : null,
+      el("figure", { class: "m-photo" }, el("img", { src: m.img, alt: m.alt, width: m.w || 640, height: m.h || 800, loading: "lazy", decoding: "async" }))));
   });
 
   /* ---------- toast text ---------- */
