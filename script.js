@@ -97,17 +97,17 @@ const CONFIG = {
   },
 
   gallery: [
-    { src: "assets/gallery-01.webp", sm: "assets/gallery-01-sm.webp", w: 959, h: 1198, sw: 560, sh: 700, alt: "Merit and DozZy in traditional attire at night" },
-    { src: "assets/gallery-02.webp", sm: "assets/gallery-02-sm.webp", w: 992, h: 1239, sw: 560, sh: 699, alt: "The couple in matching red and gold traditional wear" },
-    { src: "assets/gallery-03.webp", sm: "assets/gallery-03-sm.webp", w: 900, h: 1080, sw: 560, sh: 672, alt: "Merit waving with a bright smile in the garden" },
-    { src: "assets/gallery-04.webp", sm: "assets/gallery-04-sm.webp", w: 853, h: 1280, sw: 560, sh: 840, alt: "Merit joyfully tossing the horsetail fan" },
-    { src: "assets/gallery-05.webp", sm: "assets/gallery-05-sm.webp", w: 1200, h: 800, sw: 640, sh: 426, alt: "Merit and DozZy sharing a moment during the traditional wedding" },
-    { src: "assets/gallery-06.webp", sm: "assets/gallery-06-sm.webp", w: 936, h: 1170, sw: 560, sh: 700, alt: "A tender pre-wedding moment on the staircase" },
-    { src: "assets/gallery-07.webp", sm: "assets/gallery-07-sm.webp", w: 914, h: 1280, sw: 560, sh: 784, alt: "Merit carrying the wine, smiling" },
-    { src: "assets/gallery-08.webp", sm: "assets/gallery-08-sm.webp", w: 1200, h: 855, sw: 640, sh: 456, alt: "DozZy celebrated with money spraying at the traditional wedding" },
-    { src: "assets/gallery-09.webp", sm: "assets/gallery-09-sm.webp", w: 970, h: 1213, sw: 560, sh: 700, alt: "Merit and DozZy by the lift in black and white" },
-    { src: "assets/gallery-10.webp", sm: "assets/gallery-10-sm.webp", w: 800, h: 1123, sw: 560, sh: 786, alt: "Merit and DozZy in the greenery" },
-    { src: "assets/gallery-11.webp", sm: "assets/gallery-11-sm.webp", w: 594, h: 1080, sw: 560, sh: 1018, alt: "An early photo of Merit and DozZy" }
+    { src: "assets/gallery-01.webp", sm: "assets/gallery-01-sm.webp", w: 959, h: 1198, sw: 560, sh: 700, alt: "" },
+    { src: "assets/gallery-02.webp", sm: "assets/gallery-02-sm.webp", w: 992, h: 1239, sw: 560, sh: 699, alt: "" },
+    { src: "assets/gallery-03.webp", sm: "assets/gallery-03-sm.webp", w: 900, h: 1080, sw: 560, sh: 672, alt: "" },
+    { src: "assets/gallery-04.webp", sm: "assets/gallery-04-sm.webp", w: 853, h: 1280, sw: 560, sh: 840, alt: "" },
+    { src: "assets/gallery-05.webp", sm: "assets/gallery-05-sm.webp", w: 1200, h: 800, sw: 640, sh: 426, alt: "" },
+    { src: "assets/gallery-06.webp", sm: "assets/gallery-06-sm.webp", w: 936, h: 1170, sw: 560, sh: 700, alt: "" },
+    { src: "assets/gallery-07.webp", sm: "assets/gallery-07-sm.webp", w: 914, h: 1280, sw: 560, sh: 784, alt: "" },
+    { src: "assets/gallery-08.webp", sm: "assets/gallery-08-sm.webp", w: 1200, h: 855, sw: 640, sh: 456, alt: "" },
+    { src: "assets/gallery-09.webp", sm: "assets/gallery-09-sm.webp", w: 970, h: 1213, sw: 560, sh: 700, alt: "" },
+    { src: "assets/gallery-10.webp", sm: "assets/gallery-10-sm.webp", w: 800, h: 1123, sw: 560, sh: 786, alt: "" },
+    { src: "assets/gallery-11.webp", sm: "assets/gallery-11-sm.webp", w: 594, h: 1080, sw: 560, sh: 1018, alt: "" }
   ],
 
   toast: {
